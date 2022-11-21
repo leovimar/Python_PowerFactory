@@ -61,6 +61,9 @@ app.PrintPlain(total)
 Extra information for testing Git
 '''
 
+#==============================================================================
+# Other formats (emf, svg, pdf, png, jpg, ...)
+#==============================================================================
 
 def export_plot_pages(app, folder_path, extension):
   com_wr = app.GetFromStudyCase('ComWr')
@@ -70,16 +73,11 @@ def export_plot_pages(app, folder_path, extension):
   for plot_page in plot_pages:
     plot_page.Show()
     plot_page_name = plot_page.GetAttribute('loc_name')
-#    file_name = '%s\%s' %(folder_path, plot_page_name)
     file_name = f'{folder_path}\{plot_page_name}.{extension}' 
     graph_board.WriteWMF(file_name)
     com_wr.f = file_name
     com_wr.Execute()  
-  
 
-##==============================================================================
-## Other formats (emf, svg, pdf, png, jpg, ...)
-##==============================================================================
 #iopt_rd = 'pdf'
 #
 ## Get and set export command
