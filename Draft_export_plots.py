@@ -5,6 +5,24 @@ app = powerfactory.GetApplication()
 path  = 'D:\Projects\Gobel\Results_'
 folder = 'Plots'
 
+
+'''
+Some text goes here
+'''
+
+'''
+Some text goes here
+'''
+
+'''
+Some text goes here
+'''
+
+'''
+Some text goes here
+'''
+
+
 #folder_path = os.path.join(path, folder)  
 folder_path = '%s\%s' %(path, folder)    
 
