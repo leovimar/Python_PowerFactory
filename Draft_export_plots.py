@@ -39,6 +39,11 @@ app.PrintPlain(total)
 #    graph_board.WriteWMF(file_name) 
      
 
+'''
+Extra information for testing Git
+'''
+
+
 def export_plot_pages(app, folder_path, extension):
   com_wr = app.GetFromStudyCase('ComWr')
   com_wr.iopt_rd = extension
